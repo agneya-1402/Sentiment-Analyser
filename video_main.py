@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
 
-# Load the pre-trained emotion detection model
-model = load_model('SentimentAnalyse/FER_model.h5')  # Assuming you have a pre-trained model
+# Load FER model
+model = load_model('SentimentAnalyse/FER_model.h5')  
 
 # Load the face detection model (Haar Cascade)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
